@@ -17,7 +17,7 @@ public class TesteController {
         Veiculo veiculo = new Veiculo();
         veiculo.setId(1L);
         veiculo.setPlaca("xxx-xxx");
-        veiculo.setModelo("fuscão preto");
+        veiculo.setModelo("BYD");
         return veiculo;
     }
 }
