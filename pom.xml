@@ -30,10 +30,10 @@
 		<java.version>25</java.version>
 	</properties>
 	<dependencies>
-		<!-- <dependency> COMO ESTÁ SEM O BANCO DE DADOS NO MOMENTO ENTÃO EU VOU DEIXAR COMENTADO ENQUANTO NÃO
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency> -->
+		</dependency>
 		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-integration</artifactId>
@@ -51,16 +51,16 @@
 			<artifactId>spring-integration-jpa</artifactId>
 		</dependency>-->
 
-		<!--<dependency>
+		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
-		</dependency>-->
-		<!--<dependency>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa-test</artifactId>
 			<scope>test</scope>
-		</dependency>-->
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>

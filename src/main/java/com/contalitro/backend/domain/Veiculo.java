@@ -1,11 +1,30 @@
 package com.contalitro.backend.domain;
 
-public class Veiculo {
+import java.util.ArrayList;
+import java.util.List;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+
+@Entity
+public class Veiculo {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String placa;
     private String modelo;
     private Double capacidadeTanque;
+
+    @OneToMany(mappedBy = "veiculo")
+    private List<Leitura> leituras = new ArrayList<>();
+
+    @OneToMany(mappedBy = "veiculo")
+    private List<Viagem> viagens = new ArrayList<>();
 
     public Long getId(){
         return id;
